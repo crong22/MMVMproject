@@ -25,18 +25,21 @@ class NicknameViewModel {
         
         // 1) nil 체크 !
         guard let text = input else {
+            namebool = false
             namecheck = "nil"
             return
         }
         
         // 2) 빈 값 체크
         if text.isEmpty {
+            namebool = false
             namecheck = "닉네임을 입력해주세요."
             return
         }
         
         // 3) 숫자만 입력했을 때
         if let num = Int(text) {
+            namebool = false
             namecheck = "숫자만 입력이 불가능합니다."
             return
         }
@@ -47,6 +50,7 @@ class NicknameViewModel {
             namecheck = "가입이가능합니다 :)"
             return
         }else {
+            namebool = false
             namecheck = "4글자 이상 9글자이하로 입력해주세요. "
         }
         
