@@ -13,6 +13,10 @@
 		D85B6E072C3D1887004C90F3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D85B6E062C3D1887004C90F3 /* Base */; };
 		D85B6E092C3D1888004C90F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85B6E082C3D1888004C90F3 /* Assets.xcassets */; };
 		D85B6E0C2C3D1888004C90F3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D85B6E0B2C3D1888004C90F3 /* Base */; };
+		D85B6E172C3D18DB004C90F3 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B6E162C3D18DB004C90F3 /* NicknameViewController.swift */; };
+		D85B6E1B2C3D1902004C90F3 /* NicknameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B6E1A2C3D1902004C90F3 /* NicknameViewModel.swift */; };
+		D85B6E1E2C3D1925004C90F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D85B6E1D2C3D1925004C90F3 /* SnapKit */; };
+		D85B6E202C3D1FDE004C90F3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85B6E1F2C3D1FDE004C90F3 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		D85B6E082C3D1888004C90F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D85B6E0B2C3D1888004C90F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D85B6E0D2C3D1888004C90F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85B6E162C3D18DB004C90F3 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
+		D85B6E1A2C3D1902004C90F3 /* NicknameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewModel.swift; sourceTree = "<group>"; };
+		D85B6E1F2C3D1FDE004C90F3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85B6E1E2C3D1925004C90F3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,8 @@
 		D85B6DFE2C3D1887004C90F3 /* MMVMproject */ = {
 			isa = PBXGroup;
 			children = (
+				D85B6E1F2C3D1FDE004C90F3 /* Observable.swift */,
+				D85B6E152C3D18CA004C90F3 /* Nickname */,
 				D85B6DFF2C3D1887004C90F3 /* AppDelegate.swift */,
 				D85B6E012C3D1887004C90F3 /* SceneDelegate.swift */,
 				D85B6E032C3D1887004C90F3 /* ViewController.swift */,
@@ -65,6 +75,15 @@
 				D85B6E0D2C3D1888004C90F3 /* Info.plist */,
 			);
 			path = MMVMproject;
+			sourceTree = "<group>";
+		};
+		D85B6E152C3D18CA004C90F3 /* Nickname */ = {
+			isa = PBXGroup;
+			children = (
+				D85B6E162C3D18DB004C90F3 /* NicknameViewController.swift */,
+				D85B6E1A2C3D1902004C90F3 /* NicknameViewModel.swift */,
+			);
+			path = Nickname;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +102,9 @@
 			dependencies = (
 			);
 			name = MMVMproject;
+			packageProductDependencies = (
+				D85B6E1D2C3D1925004C90F3 /* SnapKit */,
+			);
 			productName = MMVMproject;
 			productReference = D85B6DFC2C3D1887004C90F3 /* MMVMproject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,9 @@
 				Base,
 			);
 			mainGroup = D85B6DF32C3D1887004C90F3;
+			packageReferences = (
+				D85B6E1C2C3D1925004C90F3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D85B6DFD2C3D1887004C90F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85B6E172C3D18DB004C90F3 /* NicknameViewController.swift in Sources */,
 				D85B6E042C3D1887004C90F3 /* ViewController.swift in Sources */,
+				D85B6E1B2C3D1902004C90F3 /* NicknameViewModel.swift in Sources */,
 				D85B6E002C3D1887004C90F3 /* AppDelegate.swift in Sources */,
+				D85B6E202C3D1FDE004C90F3 /* Observable.swift in Sources */,
 				D85B6E022C3D1887004C90F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,13 +320,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94C5KLWYKG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MMVMproject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +336,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sesac.MMVMproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,13 +353,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94C5KLWYKG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MMVMproject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +369,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sesac.MMVMproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -361,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D85B6E1C2C3D1925004C90F3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D85B6E1D2C3D1925004C90F3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85B6E1C2C3D1925004C90F3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D85B6DF42C3D1887004C90F3 /* Project object */;
 }
